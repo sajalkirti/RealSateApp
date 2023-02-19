@@ -15,11 +15,19 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "es2015",
+    "typeRoots": [
+      "node_modules/@types",
+      "src/alertify.d.ts"
+    ],
     "module": "es2020",
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@angular/*": ["./node_modules/@angular/*"]
+    }
+
   },
   "angularCompilerOptions": {
     "strictInjectionParameters": true,
